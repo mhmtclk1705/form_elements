@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2 Form Elements Recap</title>
+    <style>
+        fieldset {
+            border: 1px solid;
+        }
+
+        #id {
+            margin-left: 1px;
+        }
+
+        #name {
+            margin-left: 100px;
+        }
+
+        #age {
+            margin-left: 97px;
+        }
+
+        #surname {
+            margin-left: 80px;
+        }
+
+        #email {
+            margin-left: 82px;
+        }
+
+        #pic {
+            margin-left: 32px;
+        }
+
+        #exp {
+            margin-left: 200px;
+        }
+
+        #date {
+            margin-left: 65px;
+        }
+        h1{
+            text-align: center;
+        }
+        body{
+            border: 1px solid;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ABC Tasarım Programı Kurulum ve Satış Sözleşmesi :)</h1>
+    <form action="">
+
+        <fieldset>
+            <legend>
+                Sözleşme Onayı
+            </legend>
+            <input type="radio" id="onay">
+            <label for="onay">Aşağıdaki bilgilerin doğruluğunu kabul ediyorum ve sözleşmesini onaylıyorum.</label><br>
+            <input type="submit" value="Formu Faydet">
+            <input type="reset" value="Formu Temizle">
+
+        </fieldset>
+        <fieldset class="bilgi">
+            <legend>Kişisel Bilgiler
+            </legend>
+            <label for="id"> Form Güvenlik ID </label>
+            <input type="text" name="id" id="id"> <br>
+            <label for="name">Ad </label>
+            <input type="text" name="name" id="name"><br>
+            <label for="surname">Soyad </label>
+            <input type="text" name="surname" id="surname"><br>
+            <label for="age">Yaş </label>
+            <input type="number" name="age" id="age" min=7 max=150><br>
+            <label for="email">Email </label>
+            <input type="email" name="email" id="email"><br>
+            <label for="pic">Fotoğraf Ekle </label>
+            <input type="file" name="picture" id="pic">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Diğer Bilgiler</legend>
+            <pre>      <b> Buradaki alanlar Mesleki Deneyimi Kapsar</b></pre>
+            <label for="date">Sektöre Giriş Tarihi</label>
+            <input type="date" name="girisTarihi" id="date"><br>
+
+            <input type="radio" name="experience" id="exp"> 1-5 Yıl <br>
+            <label for="exp">Sektör Deneyimi</label><input type="radio" name="experience" id="exp"
+                style="margin-left: 91px;"> 6-10 Yıl <br>
+            <input type="radio" name="experience" id="exp"> 11-15 Yıl <br>
+            <input type="radio" name="experience" id="exp"> 15 - Üzeri
+        </fieldset>
+        <fieldset>
+            <legend>Sözleşme Kopyası</legend>
+            <textarea name="licenseAgreement" id="agree" cols="60"
+                rows="5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime laboriosam quam cum dicta reiciendis. Tenetur ab corrupti impedit sit id blanditiis esse, consectetur aliquam placeat mollitia ad dicta, molestias nam.</textarea>
+
+        </fieldset>
+        <fieldset>
+            <legend>Mail Listesi</legend>
+            <label for="mailagree">Mail Listesine Katılmak <b>İstiyorum </b></label> <input type="radio" name="mailList" id="mailagree"><br>
+            <label for="maildisagree">Mail Listesine Katılmak <b>İstemiyorum </b></label> <input type="radio" name="mailList" id="maildisagree">
+            
+        </fieldset>
+
+</body>
+
+</html>
